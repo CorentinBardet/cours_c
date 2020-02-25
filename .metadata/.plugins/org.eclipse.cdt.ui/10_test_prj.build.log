@@ -1,6 +1,71 @@
-10:09:56 **** Incremental Build of configuration Debug for project 10_test_prj ****
+10:22:54 **** Incremental Build of configuration Debug for project 10_test_prj ****
 make -j4 all 
-make: Nothing to be done for 'all'.
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from /usr/include/stdio.h:33:0,
+                 from ../src/main.c:30:
+/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h:216:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘typedef’
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+ typedef __SIZE_TYPE__ size_t;
+ ^~~~~~~
+In file included from /usr/include/stdio.h:41:0,
+                 from ../src/main.c:30:
+/usr/include/x86_64-linux-gnu/bits/libio.h:306:3: error: unknown type name ‘size_t’
+   size_t __pad5;
+   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/libio.h:309:67: error: ‘size_t’ undeclared here (not in a function); did you mean ‘__size_t’?
+   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+                                                                   ^~~~~~
+                                                                   __size_t
+/usr/include/x86_64-linux-gnu/bits/libio.h:337:62: error: expected declaration specifiers or ‘...’ before ‘size_t’
+ typedef __ssize_t __io_read_fn (void *__cookie, char *__buf, size_t __nbytes);
+                                                              ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/libio.h:346:6: error: expected declaration specifiers or ‘...’ before ‘size_t’
+      size_t __n);
+      ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/libio.h:467:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_IO_sgetn’
+ extern _IO_size_t _IO_sgetn (_IO_FILE *, void *, _IO_size_t);
+                   ^~~~~~~~~
+In file included from ../src/main.c:30:0:
+/usr/include/stdio.h:278:35: error: expected declaration specifiers or ‘...’ before ‘size_t’
+ extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+                                   ^~~~~~
+/usr/include/stdio.h:284:47: error: expected declaration specifiers or ‘...’ before ‘size_t’
+ extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __THROW __wur;
+                                               ^~~~~~
+/usr/include/stdio.h:295:20: error: expected declaration specifiers or ‘...’ before ‘size_t’
+       int __modes, size_t __n) __THROW;
+                    ^~~~~~
+/usr/include/stdio.h:301:10: error: expected declaration specifiers or ‘...’ before ‘size_t’
+          size_t __size) __THROW;
+          ^~~~~~
+/usr/include/stdio.h:340:44: error: expected declaration specifiers or ‘...’ before ‘size_t’
+ extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                            ^~~~~~
+/usr/include/stdio.h:344:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+ extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+                                             ^~~~~~
+/usr/include/stdio.h:604:11: error: expected declaration specifiers or ‘...’ before ‘size_t’
+           size_t *__restrict __n, int __delimiter,
+           ^~~~~~
+/usr/include/stdio.h:607:9: error: expected declaration specifiers or ‘...’ before ‘size_t’
+         size_t *__restrict __n, int __delimiter,
+         ^~~~~~
+/usr/include/stdio.h:617:8: error: expected declaration specifiers or ‘...’ before ‘size_t’
+        size_t *__restrict __n,
+        ^~~~~~
+/usr/include/stdio.h:646:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread’
+ extern size_t fread (void *__restrict __ptr, size_t __size,
+               ^~~~~
+/usr/include/stdio.h:652:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite’
+ extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+               ^~~~~~
+/usr/include/stdio.h:673:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread_unlocked’
+ extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+               ^~~~~~~~~~~~~~
+/usr/include/stdio.h:675:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite_unlocked’
+ extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+               ^~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
 
-10:09:57 Build Finished (took 514ms)
+10:22:55 Build Finished (took 585ms)
 
