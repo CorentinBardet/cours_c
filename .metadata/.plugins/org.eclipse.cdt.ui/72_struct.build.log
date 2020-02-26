@@ -1,0 +1,7 @@
+09:02:36 **** Build of configuration Debug for project 72_struct ****
+make -j4 all 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+gcc  -o "72_struct"  ./src/main.o   
+
+09:02:36 Build Finished (took 672ms)
+

@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+
+/*int x_point1;
+int x_point2;
+int y_point1;
+int y_point2;
+
+int calc_distance(x_point1, y_point2){
+
+
+
+
+}*/
+
+
+
+
+
+int main(void){
+
+int x_1;
+int x_2;
+int y_1;
+int y_2;
+
+
+int distance_x = x_2 - x_1;
+int distance_y = y_2 - y_1;
+
+distance_x = distance_x * distance_y;
+distance_y = distance_x * distance_y;
+
+int distance = distance_x = distance_y;
+distance = sqrt(distance);
+
+printf("%d", distance);
+
+
+
+
+	return 0;
+}

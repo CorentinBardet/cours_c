@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include <stdbool.h>
 
-int return_0(int c, int d){
+int return_0(float c, float d){
 	if (c == d){
 		return 0;
 	}
@@ -15,15 +15,15 @@ int return_0(int c, int d){
 
 int main(void){
 
-	int a;
-	int b;
+	float a;
+	float b;
 	while (true){
-		printf("Entrez deux nombres entiers: ");
-		scanf("%d%d",&a,&b);
+		printf("Entrez deux nombres décimaux: ");
+		scanf("%f%f",&a,&b);
 		int calc = return_0(a, b);
 
 		if (calc == 0){
-			printf("Les entiers sont égaux \n");
+			printf("Les decimaux sont égaux \n");
 		}
 		else {
 			printf("Ils ne sont pas égaux \n" );
