@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+
+  int nbr;
+
+  printf("Entrez le nombre à convertir: ");
+  scanf("%d",&nbr);
+  
+  nbr = !nbr;
+  printf("%b", nbr)  
+  
+  
+  
+  return 0;
+}
